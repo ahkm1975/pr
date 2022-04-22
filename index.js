@@ -2,7 +2,7 @@ const { PeerServer } = require('peer');
 
 var connectionArray = new Array();
 
-const peerServer = PeerServer({ host: 'localhost', port: 999, path: '/myapp', key: 'yt', allow_discovery: true });
+const peerServer = PeerServer({port: 999, path: '/myapp', key: 'yt', allow_discovery: true });
 
 function makeUserListMessage() {
   var userListMsg = {
